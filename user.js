@@ -1301,3 +1301,30 @@ user_pref("widget.non-native-theme.enabled", true); // [DEFAULT: true]
 
 /* END: internal custom pref to test for syntax errors ***/
 user_pref("_user.js.parrot", "SUCCESS: No no he's not dead, he's, he's restin'!");
+
+///////////////////////////////////////////////////////////////////////////////
+// CUSTOM - my personal preferences
+// some taken from https://www.privacytools.io/browsers/#about_config
+///////////////////////////////////////////////////////////////////////////////
+// disable saving passwords
+user_pref("signon.rememberSignons", false); // 5003
+// allow some suggestions from the url bar
+user_pref("browser.urlbar.suggest.bookmark", true); // 5010
+user_pref("browser.urlbar.suggest.history", true); // 5010
+// disable pocket extension
+user_pref("extensions.pocket.enabled", false);
+// enable fission
+user_pref("fission.autostart", true);
+// firefox sync - sync only bookmarks and addons
+user_pref("services.sync.username", "paulo.h.erichsen@gmail.com");
+user_pref("services.sync.engine.addons", true);
+user_pref("services.sync.engine.bookmarks", true);
+user_pref("services.sync.engine.addresses", false);
+user_pref("services.sync.engine.forms", false);
+user_pref("services.sync.engine.history", false);
+user_pref("services.sync.engine.passwords", false);
+user_pref("services.sync.engine.prefs", false);
+user_pref("services.sync.engine.prefs.modified", false);
+user_pref("services.sync.engine.tabs", false);
+// END: update our custom variable
+user_pref("_user.js.parrot", "SUCCESS: custom settings loaded successfully!");
